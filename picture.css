@@ -1,12 +1,12 @@
 div.img {
     margin: 5px;
-    border: 1px solid #0099FF;
+    border: 2px solid #0099FF;
     float: left;
-    width: 50%;
+    width: 45%;
 }
 
 div.img:hover {
-    border: 1px solid #777;
+    border: 2px solid black;
 }
 
 div.img img {
