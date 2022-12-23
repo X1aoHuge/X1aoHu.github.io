@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="./js/script1.js"></script>
+</head>
+<body>
+    <div class="title">
+        <h1>Welcome to Kunming</h1>
+    </div>
+
+    <div class="container right-panel-active">
+        <div class="container_from container--signup">
+            <form action="#" class="from" id="from1">
+                <h2 class="from_title">注册账号</h2>
+                <input type="text" placeholder="用户名" class="input" id="register-username">
+                <input type="email" placeholder="电子邮箱" class="input" id="register-email">
+                <input type="password" placeholder="请输入8位以上的密码" class="input" id="register-password">
+                <button class="btn" onclick="register()">注册</button>
+            </form>
+        </div>
+
+        <div class="container_from container--signin">
+            <form action="#" class="from" id="from2">
+                <h2 class="from_title">欢迎登录</h2>
+                <input type="text" placeholder="用户名" class="input" id="login-username">
+                <input type="password" placeholder="密码" class="input" id="login-password">
+                <a href="#" class="link">忘记密码?</a>
+                <button class="btn" onclick="login()">登录</button>
+            </form>
+        </div>
+        <div class="container_overlay">
+            <div class="overlay">
+                <div class="overlay_panel overlay--left">
+                    <button class="btn" id="signin">已有账号，点击登录</button>
+                </div>
+
+                <div class="overlay_panel overlay--right">
+                    <button class="btn" id="signup">没有账号，点击注册 </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+</html>

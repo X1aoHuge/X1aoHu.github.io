@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更多美食</title>
+    <link rel="stylesheet" href="./css/a_d_c.css">
+    <script type="text/javascript" src="./js/a_d_c_food.js"></script>
+    <link rel="stylesheet" href="./css/basic.css">
+</head>
+<body>
+    <div class="title"><h1 >More Cate Recommendation</h1></div>
+    <div class="subtitle"><h1>—— 更多美食推荐</h1></div>
+    <div class="topnav">
+        <a href="https://huge-ewbok.github.io/X1aoHu.github.io/first.html" style="margin-left: 10%;">首页</a>
+        <a href="https://huge-ewbok.github.io/X1aoHu.github.io/scenic_spots.html">旅游景点</a>
+        <a href="https://huge-ewbok.github.io/X1aoHu.github.io/food.html">美食</a>
+        <a href="https://huge-ewbok.github.io/X1aoHu.github.io/about.html">关于本站</a>
+    </div>
+    <div style="height:100%;width: 75%;margin:0 auto 0;margin-top: 2%;" class="adc">
+        <br>
+        <input type="text" name="food" id="food" value="" placeholder="输入美食名称">
+        <select name="star" id="star">
+            <option value="一颗星">一星（推荐指数）</option>
+            <option value="两颗星">二星（推荐指数）</option>
+            <option value="三颗星">三星（推荐指数）</option>
+            <option value="四颗星">四星（推荐指数）</option>
+            <option value="五颗星">五星（推荐指数）</option>
+        </select>
+        <input type="text" name="recommend" id="recommend" value="" placeholder="输入店铺（品牌）推荐">
+        <input type="text" name="price" id="price" value="" placeholder="输入平均售价">
+        <input type="text" name="statment" id="statement" value="" placeholder="简单叙述该美食的口味">
+        <input type="button" name="" id="" value="添加美食" onclick="addRow()">
+        <hr>
+        <br>
+
+        <div class="table">
+            <table border="1px" id="ta">
+                <tr style="font-weight: bold;">
+                    <td>美食名称</td>
+                    <td>推荐指数</td>
+                    <td>店铺（品牌）推荐</td>
+                    <td>平均售价（元）</td>
+                    <td>口味</td>
+                    <td>操作</td>
+                </tr>
+                <tr id="t1">
+                    <td>过桥米线</td>
+                    <td>五颗星</td>
+                    <td>桥香园、建新园</td>
+                    <td>25</td>
+                    <td>鲜香可口</td>
+                    <td>
+                        <input type="button" value="修改评分" onclick="updateRow(this)">
+                        <input type="button" value="删除" onclick="delRow(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>鲜花饼</td>
+                    <td>四颗星</td>
+                    <td>嘉华饼屋、潘祥记</td>
+                    <td>30</td>
+                    <td>偏甜</td>
+                    <td>
+                        <input type="button" value="修改评分" onclick="updateRow(this)">
+                        <input type="button" value="删除" onclick="delRow(this)">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    
+    </div>
+</body>
+</html>

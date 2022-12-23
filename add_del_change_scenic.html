@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更多景点</title>
+    <link rel="stylesheet" href="./css/a_d_c.css">
+    <link rel="stylesheet" href="./css/basic.css">
+    <script type="text/javascript" src="./js/a_d_c_scenic.js"></script>
+</head>
+<body>
+    <div class="title"><h1 >More Scenic Spot Recommendation</h1></div>
+    <div class="subtitle"><h1>—— 更多景点推荐</h1></div>
+    <div class="topnav">
+        <a href="https://huge-ewbok.github.io/X1aoHu.github.io/first.html" style="margin-left: 10%;">首页</a>
+        <a href="https://huge-ewbok.github.io/X1aoHu.github.io/scenic_spots.html">旅游景点</a>
+        <a href="https://huge-ewbok.github.io/X1aoHu.github.io/food.html">美食</a>
+        <a href="https://huge-ewbok.github.io/X1aoHu.github.io/about.html">关于本站</a>
+    </div>
+    <div style="height:100%; width: 75%;margin: 0 auto 0;margin-top: 2%;" class="adc">
+        <br>
+        <input type="text" name="scenic" id="scenic" value="" placeholder="输入景点名称">
+        <select name="season" id="season">
+            <option value="春季">春季</option>
+            <option value="夏季">夏季</option>
+            <option value="秋季">秋季</option>
+            <option value="冬季">冬季</option>
+            <option value="四季皆可">四季皆可</option>
+        </select>
+        <input type="text" name="price" id="price" value="" placeholder="输入门票价格">
+        <input type="text" name="evaluate" id="evaluate" value="" placeholder="输入评分">
+        <input type="text" name="timing" id="timing" value="" placeholder="输入开放时间">
+        <input type="button" name="" id="" value="添加景点" onclick="addRow()">
+        <hr>
+        <br>
+
+        <div class="table">
+            <table border="1px" id="ta">
+                <tr style="font-weight: bold;">
+                    <td>景点名称</td>
+                    <td>适玩季节</td>
+                    <td>门票价格</td>
+                    <td>评分（满分5分）</td>
+                    <td>开放时间</td>
+                    <td>操作</td>
+                </tr>
+                <tr id="t1">
+                    <td>海埂大坝</td>
+                    <td>冬季</td>
+                    <td>免费</td>
+                    <td>4.7</td>
+                    <td>00:00-24:00</td>
+                    <td>
+                        <input type="button" value="修改评分" onclick="updateRow(this)">
+                        <input type="button" value="删除" onclick="delRow(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>官渡古镇</td>
+                    <td>四季皆可</td>
+                    <td>免费</td>
+                    <td>4.8 </td>
+                    <td>00:00-24:00</td>
+                    <td>
+                        <input type="button" value="修改评分" onclick="updateRow(this)">
+                        <input type="button" value="删除" onclick="delRow(this)">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    
+    </div>
+</body>
+</html>
