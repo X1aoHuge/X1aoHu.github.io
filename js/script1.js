@@ -1,4 +1,4 @@
-var user =new Map([["huzhenyu","123456789"]])
+var user =new Map([["web","123456789"]])
 
 function login(){
     var username =document.getElementById("login-username").value;
