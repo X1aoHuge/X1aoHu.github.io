@@ -1,0 +1,139 @@
+.content{
+    float: left;
+    width: 90%;
+    margin: 1% 0 0 5%;
+    /* border: 1px solid black; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+
+.left{
+    width: 60%;
+    float: left;
+    /* height: 100%; */
+    /* border: 1px solid black; */
+    /* padding: 0px 0px 10px;*/
+}
+
+.right{
+    display: block;
+    font-weight: 500;
+    background-color: #f1f1f1;
+    float: left;
+    position:fixed;
+    top: 34%;
+    width: 20%;
+    height: 10%;
+    border-radius: 1rem;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    transform: translateX(1000px);
+}
+.adc{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 340px;
+    height: 90px;
+    border-radius: 1rem;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.right a{
+    /* border: 1px solid black; */
+    display: block;
+    font-size: 25px;
+    color:black;
+    margin: 0px auto 0;
+}
+.right a:hover{
+    color: #0099ff;
+}
+
+.it{
+    display: flex;
+    position: relative;
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+    margin-bottom: 2%;
+    /* border: 1px solid black; */
+    height: 200px;
+}
+
+.left .it .item-left{
+    float: left;
+    margin:2%;
+    border: none;
+    /* border: 1px solid black; */
+    width: 25%;
+    /* border-radius: 0.6em; */
+    /* height: 180px; */
+}
+
+.left .it .item-left img{
+    /* overflow: hidden; */
+    width:100%;
+    height:auto;
+    border-radius: 1rem;
+}
+
+.left .it .item-right{
+    float: left;
+    margin:1% 1% 1% 0;
+    /* border: 1px solid black; */
+    /* height:180px; */
+    width: 70%;
+    transform: translateX(-8px);
+}
+
+.title_link{
+    /* border:1px solid black; */
+
+    text-align: center;
+    display: block;
+}
+.title_link a{
+    display: block;
+    text-decoration: none;
+    color:black;
+}
+
+.title_link a:hover{
+    color:#0099FF;
+}
+
+.information{
+    display: flex;
+    /* border:1px solid black; */
+    height: auto;
+    float: left;    
+}
+.introduce{
+    clear: both;
+    /* border: 1px solid black; */
+    height: 80px;
+    overflow: hidden;
+}
+
+.evaluate{
+    /* border:1px solid black; */
+    float: left;
+}
+.price{
+    /* border: 1px solid black; */
+    float: left;
+}
+.left .item-right p{
+    position: relative;
+    margin: 1% 2% 1% 2%;
+    text-indent: 2em;
+    display: block;
+    clear: both;
+}
+.input{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
